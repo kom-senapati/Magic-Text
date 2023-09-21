@@ -47,3 +47,6 @@ def main():
 
     turtle.exitonclick()
 
+
+if __name__ == "__main__":
+    main()
