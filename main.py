@@ -22,3 +22,12 @@ def draw_box(color):
 
     border_turtle.hideturtle()
     turtle.done()
+
+def draw_text(text, size):
+    text_turtle = turtle.Turtle()
+    text_turtle.penup()
+    text_turtle.goto(0, 0)
+    text_turtle.pendown()
+    text_turtle.color("yellow")
+    text_turtle.write(text, align="center", font=("Arial", size, "bold"))
+    text_turtle.hideturtle()
