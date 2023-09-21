@@ -31,3 +31,19 @@ def draw_text(text, size):
     text_turtle.color("yellow")
     text_turtle.write(text, align="center", font=("Arial", size, "bold"))
     text_turtle.hideturtle()
+
+
+def main():
+    text = input("Enter text: ")
+    size = int(input("Enter size of text: "))
+    color = input("Enter color of box: ")
+
+    turtle.bgcolor("black")
+    turtle.speed(0)
+    turtle.hideturtle()
+
+    draw_text(text, size)
+    draw_box(color)
+
+    turtle.exitonclick()
+
